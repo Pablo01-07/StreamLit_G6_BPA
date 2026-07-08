@@ -47,7 +47,7 @@ C_ACC = "#1f77b4"
 
 import os
 
-BASE_DIR = os.path.dirname(os.path.abspath(file))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_resource
 def cargar_modelos():

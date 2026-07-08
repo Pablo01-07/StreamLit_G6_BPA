@@ -57,7 +57,7 @@ def cargar_modelos():
     return pipeline, selector, modelo
 
 try:
-    pipeline, selector, modelo, MATRICES_CONFUSION = cargar_modelos()
+    pipeline, selector, modelo = cargar_modelos()
     modelos_ok = True
 except Exception as e:
     modelos_ok = False

@@ -54,8 +54,7 @@ def cargar_modelos():
     pipeline = joblib.load(os.path.join(BASE_DIR, 'models', 'pipeline.pkl'))
     selector = joblib.load(os.path.join(BASE_DIR, 'models', 'selector_features.pkl'))
     modelo   = joblib.load(os.path.join(BASE_DIR, 'models', 'modelo_final_lr_opt.pkl'))
-    matrices = joblib.load(os.path.join(BASE_DIR, 'models', 'matrices_confusion.pkl'))
-    return pipeline, selector, modelo, matrices
+    return pipeline, selector, modelo
 
 try:
     pipeline, selector, modelo, MATRICES_CONFUSION = cargar_modelos()
